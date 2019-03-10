@@ -1,0 +1,39 @@
+.navbar-brand
+{
+    font-family: 'Mogra';
+    font-size: 200%;
+}
+
+.container-fluid
+{
+    margin-top: 50px;
+}
+
+.row img 
+{
+    margin-top: 12%;
+    margin-left: 10%;
+}
+
+.row h2 
+{
+    text-align: center;
+}
+
+.btn-primary
+{
+    background-color: #7ed957;
+    border-color: #7ed957;
+}
+
+.btn-primary:hover
+{
+    background-color: #5bbb31;
+    border-color: #5bbb31;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: #7ed957;
+    background-color: #7ed957;
+}
