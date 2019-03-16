@@ -3,7 +3,7 @@
 
 AnimaLog is een webapplicatie die bedoeld is om een logboek bij te houden over je huisdieren. Een user heeft één of meerdere huisdieren. Elk huisdier heeft ook een lijst van logs over zijn voorbije consultaties met een dierenarts. Huisdiereigenaren met veel dieren kunnen op deze manier bij een ziek dier de logs consulteren om te checken of het een reeds gebeurd probleem is dat opnieuw optreed. 
 
-Zo’n log zal de behandelingsnaam bevatten, de prijs van de behandeling, de datum, de naam van de dierenarts en het Id van het huisdier van toepassing.
+Een log zal de behandelingsnaam bevatten, de prijs van de behandeling, de datum, de naam van de dierenarts en het Id van het huisdier van toepassing.
 
 De info die wordt bijgehouden over het huisdier is de volgende: (Id), Eigenaar Id, Soort, Leeftijd, Geslacht, Foto.
 
