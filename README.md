@@ -9,20 +9,29 @@ De info die wordt bijgehouden over het huisdier is de volgende: (Id), Eigenaar I
 
 Van de user: Id, Naam, E-mail, paswoord, aantal huisdieren.
 
-## ER-diagram
+## ER-diagram:
 
 ![ER](https://i.postimg.cc/nhdzc96V/ER.png)
 
-## Table-diagram
+## Table-diagram:
 
 ![Table](https://i.postimg.cc/qv0wdqKv/Table.png)
 
-## Use-case
+## Use-case:
 
 ### Logged On User:
 ![Use-case 1](https://i.postimg.cc/ZntbW8b3/usecase1.png)
 
-### Visitor
+### Visitor:
 
 ![Use-case 2](https://i.postimg.cc/bwCqxcYq/usecase2.png)
 
+### Technologie:
+
+#### Back-end:
+
+SQLite & Flask
+
+#### Front-end:
+
+HTML/CSS
