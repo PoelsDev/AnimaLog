@@ -26,12 +26,12 @@ Van de user: Id, Naam, E-mail, paswoord, aantal huisdieren.
 
 ![Use-case 2](https://i.postimg.cc/bwCqxcYq/usecase2.png)
 
-### Technologie:
+## Technologie:
 
-#### Back-end:
+### Back-end:
 
 SQLite & Flask
 
-#### Front-end:
+### Front-end:
 
 HTML/CSS
