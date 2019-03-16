@@ -15,7 +15,7 @@ Van de user: Id, Naam, E-mail, paswoord, aantal huisdieren.
 
 ## Table-diagram
 
-![Table](https://i.postimg.cc/vZxjDpK1/table.png)
+![Table](https://i.postimg.cc/qv0wdqKv/Table.png)
 
 ## Use-case
 
