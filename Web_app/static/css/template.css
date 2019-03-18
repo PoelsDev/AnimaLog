@@ -40,7 +40,13 @@
 
 .register-btn
 {
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: #7ed957;
     color: white;
+}
+
+.register-btn:hover
+{
+    background-color: #5bbb31;
+    border-color: #5bbb31;
+    color:white;
 }
