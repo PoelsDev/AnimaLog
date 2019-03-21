@@ -11,11 +11,11 @@ Van de user: Id, Naam, E-mail, paswoord, aantal huisdieren.
 
 ## ER-diagram:
 
-![ER](https://i.postimg.cc/nhdzc96V/ER.png)
+![ER](https://i.postimg.cc/NFjPHmQ8/ER.png)
 
 ## Table-diagram:
 
-![Table](https://i.postimg.cc/qv0wdqKv/Table.png)
+![Table](https://i.postimg.cc/VvZZBvNx/Table.png)
 
 ## Use-case:
 
