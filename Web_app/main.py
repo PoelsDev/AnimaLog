@@ -46,8 +46,11 @@ def register():
         name = request.form["username"]
         email = request.form["email"]
         password = request.form["password"]
-        cr.execute("INSERT OR IGNORE INTO Users(Name, Email, Password) VALUES(?,?,?);",(name, email, password))
-        db.commit()
+        if len(name) == 0 or len(email) == 0 or len(password) == 0:
+            pass
+        else:
+            cr.execute("INSERT OR IGNORE INTO Users(Name, Email, Password) VALUES(?,?,?);",(name, email, password))
+            db.commit()
 
         if cr.lastrowid == 0:
            return redirect(url_for('register'))
