@@ -1,5 +1,5 @@
 from flask import *
-from flask_login import UserMixin, login_user, logout_user, LoginManager, login_required
+from flask_login import UserMixin, login_user, logout_user, LoginManager, login_required, current_user
 import sqlite3
 
 app = Flask(__name__)
@@ -28,9 +28,13 @@ def home():
         if len(data) == 0:
             return redirect(url_for("home"))
         else:
-            cr.execute("SELECT UserId from Users WHERE email='" + email + "' AND password='" +  password +"';")
-            user_id = cr.fetchone()[0]
-            login_user(User(user_id))
+            cr.execute("SELECT UserId, Name, Email from Users WHERE email='" + email + "' AND password='" +  password +"';")
+            tuple_data = cr.fetchone()
+            id, name, email = tuple_data
+            session['user_id'] = id
+            session['username'] = name
+            session['email'] = email
+            login_user(User(id))
             return redirect(url_for("login"))
     return render_template("index.html")
 
@@ -61,13 +65,23 @@ def register():
 @app.route("/welcome")
 @login_required
 def login():
-    return "Welcome!"
+    return redirect(url_for("profile"))
 
 @app.route("/logout")
 @login_required
 def logout():
     logout_user()
     return redirect(url_for("home"))
+
+@app.route("/profile")
+@login_required
+def profile():
+    name = session['username']
+    email = session['email']
+    info = []
+    info.append(name)
+    info.append(email)
+    return render_template("profile.html", info = info)
 
 if __name__ == "__main__":
     app.secret_key = "yeet123"
