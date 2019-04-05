@@ -35,3 +35,5 @@ SQLite & Flask
 ### Front-end:
 
 HTML/CSS
+
+Ik zal proberen de tussenweg te kiezen tussen front- & backend.
